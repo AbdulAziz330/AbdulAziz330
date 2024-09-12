@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #081b29;
+    color: #0ef;
+    margin: 0px auto;
+    align-items: center;
+    padding: 5rem 0px;
+   
+}
+
+.wrapper {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+}
+.heading {
+    width: auto;
+    text-align: center;
+    margin: 7px;
+   
+    
+}
+
+/* lower section */
+.lowerSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 5px;
+}
+
+#form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.inputField {
+ 
+    margin: 1rem;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    padding: 0.3rem;
+    width: 60vw;
+    font-size:medium;
+  
+}
+
+.inputField:focus {
+    border: 1px solid #eee;
+    background-color:#081b29;
+    color:#0ef;
+ 
+}
+
+.submitButton {
+    border:1px soild #eee;
+    outline: none;
+    padding:0.3rem;
+    background-color: #081b29;
+    color: #0ef;
+    width: 15vw;
+     font-weight: bold;
+    font-size:1rem; 
+    cursor: pointer;
+}
+
+.submitButton:hover {
+    color: #081b29;
+    background-color: #0ef;
+}
+.submitButton:active {
+    cursor: progress;
+}
+
+
+/* generated text section */
+.text-wrapper {
+    background-color: #081b29;
+    border: 1px solid #eee;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    width: 80%;
+    padding: 0.8rem 1.1rem;
+    border-radius: 1.4rem;
+    font-weight: bold;
+    overflow-y: hidden;
+
+}
+
+
+.copy-container {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.copy {
+    color: #7C81AD;
+
+}
+
+.copy:hover {
+    color: #4B527E;
+}
+
+@media  screen and (max-width: 768px) {
+    body {
+        padding: 1rem 0; 
+    }
+    #form {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .submitButton{
+        width:auto;
+        padding: 0.4rem;
+    }
+    .wrapper{
+        width: 100%;
+        padding: 2px 8px;
+    }
+    .inputField{
+        width: 50%;
+    }
+    
+    .text-wrapper{
+        width: 90%;
+    }
+    
+   
+}

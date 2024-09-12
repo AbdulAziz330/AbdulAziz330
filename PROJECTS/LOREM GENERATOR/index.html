@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lorem Ipsum generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+   
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="wrapper">
+     
+      <h1 class="heading">Lorem Sentence Generator</h1>
+      <div class="lowerSection">
+       <form id="form">
+          
+          <input class="inputField" placeholder="How Many Sentences?" type="text" name="input" id="input" />
+          <input class="submitButton" type="submit" value="Request" />
+        </form>
+
+        <!-- generated text wrapper -->
+        <div class="text-wrapper">
+          <span class="copy-container"
+            ><i
+              class="copy fa-solid fa-copy"
+            ></i
+          ></span>
+
+          <!-- text content -->
+          <div class="loremText"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

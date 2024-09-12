@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #081b29;
+}
+.load{
+    width: 44px;
+    height: 44px;
+    color:#0ef;
+    margin: 1.5vw;
+    position: relative;
+    background: radial-gradient(11.2px,currentColor 94%,#0000);
+}
+.load::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(10px at bottom right,#f2e1e100 94%,currentColor) top    left,radial-gradient(10px at bottom left ,#d6222200 94%,currentColor) top    right,
+    radial-gradient(10px at top    right,#0000 94%,currentColor) bottom left,
+    radial-gradient(10px at top    left ,#b8000000 60%,currentColor) bottom right;
+    background-size: 22px 22px;
+    background-repeat: no-repeat;
+    animation: loader 1.5s infinite ease;
+}
+@keyframes loader{
+    33%{
+        inset: -11px;
+      transform: rotate(0deg);
+    }
+    66%{
+        inset: -10px;
+        transform: rotate(90deg);
+    }
+    100%{
+        inset: 0;
+        transform: rotate(90deg);
+    }
+}

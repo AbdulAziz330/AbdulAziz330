@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Distance Calculator</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="container">
+    <h2 class="heading">3D Distance Calculator</h2>
+    <form class="distanceForm">
+        <h4>(X1, Y1, Z1) </h4>
+        <div class="first">
+        <input type="number" id="x1" required class="input" placeholder="X1:">
+        <input type="number" id="y1" required class="input" placeholder="y1:">
+        <input type="number" id="z1" required class="input" placeholder="Z1:">
+    </div>
+    <h4>(X2, Y2, Z2)</h4>
+    <div class="second">
+        <input type="number" id="x2" required class="input" placeholder="X2:">
+        <input type="number" id="y2" required class="input" placeholder="Y2:">
+        <input type="number" id="z2" required class="input" placeholder="Z2:">
+    </div>
+    </form>
+    <div class="btns">
+    <button type="button" class="btn cal" id="calculate">Calculate</button>
+    <button type="button" class="btn" id="clear">Clear</button>
+</div>
+<div class="result">
+<h4 class="hresult">Result:</h4>
+    <p class="presult"></p>
+</div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

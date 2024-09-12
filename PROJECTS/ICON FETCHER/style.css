@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: ease-in-out 0.2ms;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color:#333333;
+    align-items: center;
+    
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 2rem;
+    width: 80%;
+}
+.image{
+height: 10rem;
+width: 7rem;
+margin: 2rem;
+border-radius: 99px;
+outline: none;
+text-align: center;
+padding: 2.9rem 0.4rem;
+cursor: pointer;
+}
+.input{
+width: 70%;
+cursor: pointer;
+border: none;
+outline: none;
+padding: 0.5rem;
+border-radius: 99px;
+}
+@media only screen and (max-width: 420px) {
+.input{
+width: 60vw;
+cursor: pointer;
+border: none;
+outline: none;
+padding: 0.4rem;
+border-radius: 99px;
+}
+}
